@@ -1,0 +1,61 @@
+\documentclass[10pt]{letter}
+\usepackage[utf8x]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\setlength\topmargin{-50pt}
+\setlength\textheight{10in}
+
+
+\renewcommand{\closing}[1]{\par\nobreak\vspace{\parskip}%
+\stopbreaks
+\noindent
+\ifx\@empty\fromaddress\else
+\hspace*{\longindentation}\fi
+\parbox{\indentedwidth}{\raggedright
+    \ignorespaces #1\\[0.0in]%
+    \ifx\@empty\fromsig
+        \fromname
+\else \fromsig \fi\strut}%
+\par}
+
+
+\address{Tor Erik Linnerud \\ 300 N End Ave Apt 5B \\ New York\\ NY 10282 }
+
+\signature{
+    \includegraphics[scale=0.3]{signature.pdf} \\
+    Tor Erik Linnerud.
+}
+
+\begin{document}
+
+\begin{letter}{NY Allergy \& Sinus Centers \\ 116 East 36th Street\\ New York\\ NY 10016}
+
+\opening{Medical Records Release}
+
+In accordance with 42 USC § 17935(e)(1) am writing to request and authorize the release of a copy of my medical record, treatment record and diagnostic record held  electronically by your entity. I requesting only the portion that is currently held by your entity in an electronic format. I am requesting that this portion be released to me in a readable electronic format.
+
+I am asking that that the file(s) containing a copy of my medical, treatment diagnostic record be uploaded to a secure webpage suitable for this purpose. A link to the secure page will be provided by me together with this request.
+
+I acknowledge that I understand and accept the risks associated with such electronic transfer of my medical information.
+
+I understand and agree that the health information about me, which is used or disclosed persuant to this authorization, may be subject to re-disclosure by the recipient and may no longer be protected by law.
+
+By my signature below, I acknowledge that any prior agreement I have made to restrict or limit the disclousure of information about my health does not apply to this authorization.
+
+\hfill \break
+\begin{tabular}{|r|l|}
+\hline
+Name of patient &  Tor Erik Linnerud \\ \hline
+Date of birth & January 21, 1985 \\ \hline
+Phone number & 917 688 9763 \\ \hline
+Email address &  tel@jklm.no \\ \hline
+Current address & 300 N End Ave Apt 5B, New York, NY 10282 \\
+\hline
+\end{tabular}
+\hfill \break
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}
